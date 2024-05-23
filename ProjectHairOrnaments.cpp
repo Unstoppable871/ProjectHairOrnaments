@@ -42,6 +42,11 @@ public:
         }
     }
 
+    ~Category() {
+        for (auto ornament : ornaments) {
+            delete ornament;
+        }
+    }
 };
 
 int main()
